@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1b0f2e">
+<title>Our Love Adventure ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<button class="music" id="musicBtn" role="switch" aria-checked="false" aria-label="Background song" type="button"><span aria-hidden="true">♫</span><span id="musicLbl">Song off</span><span class="sw" aria-hidden="true"><i></i></span></button>
+<audio id="bgMusic" src="Tahanan - Adie.mp3" loop preload="none"></audio>
+<main>
+<section class="screen active" id="gate"><div class="paper">
+<div class="key" aria-hidden="true">🗝️</div>
+<h1 class="title">HELLO BAABYY</h1>
+<p class="lede">I made you a little something. Some memories, tiny surprises are waiting inside.</p>
+<p class="small" style="margin-top:22px">To unlock it, enter the date of our monthsary.</p>
+<form id="unlockForm"><input class="field" id="dateInput" autocomplete="off" placeholder="" aria-label="Date of our first monthsary"><div class="actions" style="margin-top:20px"><button class="btn" type="submit">Open our adventure</button></div></form>
+<div class="status hand" id="gateMsg" role="status" aria-live="polite"></div>
+<div class="foot">A little something for my favorite person.</div>
+</div></section>
+<section class="screen" id="journey">
+<svg class="stars" id="stars" viewBox="0 0 700 56" role="navigation" aria-label="Our constellation, one star for each chapter"></svg>
+<div class="paper">
+<p class="chapter" id="chapter"></p><div id="slideContent"></div>
+<div class="dots" id="dots" aria-hidden="true"></div>
+<div class="actions"><button class="btn ghost" id="backBtn" type="button">← Back</button><button class="btn" id="nextBtn" type="button">Next</button></div>
+<div class="foot">Made with all my love, baby mwehehe♡</div>
+</div></section>
+</main>
+<script src="script.js"></script>
+</body></html>
+  
